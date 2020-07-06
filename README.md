@@ -2,5 +2,5 @@ API que permite ejecutar la web de los clientes de reparaciones para la empresa 
 
 ### How to run
 
-- Ejecutar consolo de depuraciÃ³n
-- node server server.js
+- Ejecutar consola de depuración
+- node server.js
