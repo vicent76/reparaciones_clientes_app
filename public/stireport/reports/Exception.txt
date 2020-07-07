@@ -1,0 +1,54 @@
+----------------------------
+[Customer Explanation]
+
+
+
+----------------------------
+[General Info]
+
+Application: Stimulsoft Reports
+Framework:   v4.0.30319
+Version:     Version: 2017.1.10 from 18 July 2017
+MachineName: VICENT-PC
+OSVersion:   Microsoft Windows NT 6.2.9200.0
+UserName:    Vicent
+
+----------------------------
+[Exception Info]
+Message:     Unknown column 'pf.aCuenta' in 'field list'
+
+Source:      Devart.Data.MySql
+
+StackTrace:
+   en Devart.Data.MySql.c.a()
+   en Devart.Data.MySql.c.h()
+   en Devart.Data.MySql.u.a(a4[]& A_0, Int32& A_1, Boolean A_2)
+   en Devart.Data.MySql.u.a(Byte[] A_0, Int32 A_1, Boolean A_2, String A_3)
+   en Devart.Data.MySql.k.e()
+   en Devart.Data.MySql.MySqlCommand.InternalExecute(CommandBehavior behavior, IDisposable stmt, Int32 startRecord, Int32 maxRecords)
+   en Devart.Common.DbCommandBase.ExecuteDbDataReader(CommandBehavior behavior, Boolean nonQuery)
+   en System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
+   en System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
+   en Stimulsoft.Report.Dictionary.StiSqlSource.RetrieveData(Boolean schemaOnly)
+   en Stimulsoft.Report.Dictionary.StiSqlAdapterService.ConnectDataSourceToData(StiDictionary dictionary, StiDataSource dataSource, Boolean loadData)
+   en Stimulsoft.Report.Dictionary.StiDataSource.Connect(StiDataCollection datas, Boolean loadData)
+   en Stimulsoft.Report.Dictionary.StiDataSourcesCollection.Connect(StiDataCollection datas, Boolean loadData)
+   en Stimulsoft.Report.Dictionary.StiDictionary.Connect(Boolean loadData, List`1 dataSources)
+   en Stimulsoft.Report.Engine.StiRenderProviderV2.ConnectToData(StiReport report)
+   en Stimulsoft.Report.Engine.StiRenderProviderV2.Render(StiReport report, StiRenderState state)
+   en Stimulsoft.Report.Engine.StiReportV2Builder.RenderSingleReport(StiReport masterReport, StiRenderState renderState)
+   en Stimulsoft.Report.StiReport.RenderReport(StiRenderState renderState)
+   en Stimulsoft.Report.StiReport.Render(StiRenderState renderState, StiGuiMode guiMode)
+   en Stimulsoft.Report.StiReport.Render(Boolean showProgress)
+   en Stimulsoft.Report.Design.Controls.StiDesignerPreviewControl.btRefresh_Click(Object sender, EventArgs e)
+
+----------------------------
+[Assemblies]
+mscorlib, Version = 4.0.0.0
+Stimulsoft.Base, Version = 2017.1.10.0
+Stimulsoft.Report, Version = 2017.1.10.0
+Stimulsoft.Report.Design, Version = 2017.1.10.0
+Stimulsoft.Report.Import, Version = 2017.1.10.0
+System.Data, Version = 4.0.0.0
+System.Windows.Forms, Version = 4.0.0.0
