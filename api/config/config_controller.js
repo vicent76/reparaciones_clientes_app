@@ -9,10 +9,9 @@ Dotenv.config();
 router.get('/', (req, res) => {
     var hostName = req.hostname;
     var protocol = process.env.BASE_PROTOCOL;
-    var api = protocol + "://" + hostName + ":8088";
-    var sti = protocol + "://" + hostName + ":8088/api/streport";
+    var sti = process.env.BASE_URLAPI + "/api/streport";
     var config = {
-        urlApi: api,
+        urlApi: process.env.BASE_URLAPI,
         urlClient: process.env.BASE_URLCLIENT || "",
         one_push_url: process.env.ONE_PUSH_URL,
         one_app_id: process.env.ONE_APP_ID,
