@@ -18,6 +18,7 @@ router.get('/', (req, res) => {
         one_api_key: process.env.ONE_API_KEY,
         mailjet_api_key: process.env.MAILJET_API_KEY,
         mailjet_api_secret: process.env.MAILJET_API_SECRET,
+        urlClientAdmin: process.env.URL_ADMIN_CLIEN,
         report: {
             stiUrl: sti,
             host: "localhost",
