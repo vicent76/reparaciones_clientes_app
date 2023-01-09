@@ -1,6 +1,6 @@
 {
   "name": "reparaciones-clientes-app",
-  "version": "2.3.133",
+  "version": "2.3.134",
   "description": "API nodejs que ejecuta la aplicacion Webix  jet para los clientes de comercializa",
   "private": true,
   "scripts": {
