@@ -20,6 +20,15 @@ app.use('/version', require('./api/version/version_controller'));
 app.use('/config', require('./api/config/config_controller'));
 app.use('/mailjet', require('./api/mailjet/mailjet_controller'));
 
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+});
+
+
 
 app.use((req, res, next) => {
     const error = new Error("Not found");
