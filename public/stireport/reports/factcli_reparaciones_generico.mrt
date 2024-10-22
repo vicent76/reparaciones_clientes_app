@@ -1,11 +1,11 @@
 {
   "ReportVersion": "2021.3.6.0",
-  "ReportGuid": "92d6ff32edd94143b4950c52d8cac7b2",
+  "ReportGuid": "a43aeb728c204d7b9909ecadcee0d346",
   "ReportName": "FacturaRoman",
   "ReportAlias": "FacturaRoman",
   "ReportAuthor": "rafa@myariadna.com",
   "ReportCreated": "/Date(7200000+0100)/",
-  "ReportChanged": "/Date(1717666598529+0200)/",
+  "ReportChanged": "/Date(1729588600202+0200)/",
   "EngineVersion": "EngineV2",
   "CalculationMode": "Interpretation",
   "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class FacturaProasistencia : Stimulsoft.Report.StiReport\r\n    {\r\n        public FacturaProasistencia()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
@@ -1973,144 +1973,6 @@
           },
           "PrintAtBottom": true,
           "NewPageAfter": true
-        },
-        "10": {
-          "Ident": "StiDataBand",
-          "Name": "DataBand1",
-          "ClientRectangle": "0,19.2,19,21.8",
-          "Interaction": {
-            "Ident": "StiBandInteraction"
-          },
-          "Border": ";;;;;;;solid:Black",
-          "Brush": "solid:",
-          "Components": {
-            "0": {
-              "Ident": "StiImage",
-              "Name": "Image2",
-              "CanShrink": true,
-              "ClientRectangle": "1.6,1,15.6,20",
-              "Interaction": {
-                "Ident": "StiInteraction"
-              },
-              "Border": ";;;;;;;solid:Black",
-              "Brush": "solid:",
-              "Stretch": true,
-              "AspectRatio": true,
-              "ImageURL": {
-                "Value": "{imagenes.imagen}"
-              }
-            },
-            "1": {
-              "Ident": "StiText",
-              "Name": "Text24",
-              "Guid": "d4d070e02fc4464c891f5fc4c529c279",
-              "ClientRectangle": "11.8,0,1.8,0.4",
-              "Interaction": {
-                "Ident": "StiInteraction"
-              },
-              "Text": {
-                "Value": "Nº de parte: "
-              },
-              "Font": ";9.75;Bold;",
-              "Border": ";;;;;;;solid:Black",
-              "Brush": "solid:",
-              "TextBrush": "solid:Black",
-              "Type": "Expression"
-            },
-            "2": {
-              "Ident": "StiText",
-              "Name": "Text20",
-              "Guid": "5531d3db1a3a49549e5a2f08f4e824e3",
-              "ClientRectangle": "5,0,1.8,0.4",
-              "Interaction": {
-                "Ident": "StiInteraction"
-              },
-              "Text": {
-                "Value": "{cabecera.serie}-{cabecera.ano}-{cabecera.numero}"
-              },
-              "HorAlignment": "Center",
-              "VertAlignment": "Center",
-              "Font": "Arial Narrow;9.75;;",
-              "Border": ";;;;;;;solid:Black",
-              "Brush": "solid:",
-              "TextBrush": "solid:Black",
-              "Type": "Expression"
-            },
-            "3": {
-              "Ident": "StiText",
-              "Name": "Text22",
-              "Guid": "d96f6ecfcbf442fc8bcbce9788b2701b",
-              "ClientRectangle": "7.4,0,2.2,0.4",
-              "Interaction": {
-                "Ident": "StiInteraction"
-              },
-              "Text": {
-                "Value": "Fecha factura:"
-              },
-              "Font": ";9.75;Bold;",
-              "Border": ";;;;;;;solid:Black",
-              "Brush": "solid:",
-              "TextBrush": "solid:Black",
-              "Type": "Expression"
-            },
-            "4": {
-              "Ident": "StiText",
-              "Name": "Text25",
-              "Guid": "da8fc21f26634b60938d28cb46137ce9",
-              "ClientRectangle": "2.8,0,2.2,0.4",
-              "Interaction": {
-                "Ident": "StiInteraction"
-              },
-              "Text": {
-                "Value": "Nº de factura: "
-              },
-              "Font": ";9.75;Bold;",
-              "Border": ";;;;;;;solid:Black",
-              "Brush": "solid:",
-              "TextBrush": "solid:Black",
-              "Type": "Expression"
-            },
-            "5": {
-              "Ident": "StiText",
-              "Name": "Text32",
-              "Guid": "197193168a884ad88fb3a62f3a53d9cb",
-              "ClientRectangle": "9.6,0,1.6,0.4",
-              "Interaction": {
-                "Ident": "StiInteraction"
-              },
-              "Text": {
-                "Value": "{cabecera.fecha}"
-              },
-              "HorAlignment": "Center",
-              "VertAlignment": "Center",
-              "Font": "Arial Narrow;9.75;;",
-              "Border": ";;;;;;;solid:Black",
-              "Brush": "solid:",
-              "TextBrush": "solid:Black",
-              "Type": "Expression"
-            },
-            "6": {
-              "Ident": "StiText",
-              "Name": "Text33",
-              "Guid": "a88af77c40264f4ba0b81325b4750352",
-              "ClientRectangle": "13.8,0,1.8,0.4",
-              "Interaction": {
-                "Ident": "StiInteraction"
-              },
-              "Text": {
-                "Value": "{imagenes.numParte}"
-              },
-              "VertAlignment": "Center",
-              "Font": "Arial Narrow;9.75;;",
-              "Border": ";;;;;;;solid:Black",
-              "Brush": "solid:",
-              "TextBrush": "solid:Black",
-              "Type": "Expression"
-            }
-          },
-          "DataSourceName": "imagenes",
-          "DataRelationName": "Relación",
-          "MasterComponent": "Datacabecera"
         }
       },
       "PageWidth": 21.0,
